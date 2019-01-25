@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	escapedstr := escapeshellchar.EscapeShellString("a bc'|%;<>$\"")
+	escapedstr := escapeshellchar.EscapeShellString("';lkgfdq1-]\\=-00-[0")
 	fmt.Println(escapedstr)
 	fmt.Println(escapeshellchar.UnEscapeShellString(escapedstr))
 }

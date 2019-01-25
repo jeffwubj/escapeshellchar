@@ -4,7 +4,7 @@ import "strings"
 
 // EscapeShellString escapes the string so that it can be safely processed by split, etc
 func EscapeShellString(s string) string {
-
+	s = strings.Replace(s, "\\", "\\\\", -1)
 	s = strings.Replace(s, " ", "\\ ", -1)
 	s = strings.Replace(s, "'", "\\'", -1)
 	s = strings.Replace(s, "$", "\\$", -1)
